@@ -1,9 +1,7 @@
 streamlit
+tensorflow==2.20.0
+scikit-learn==1.6.1
+keras==3.13.2
 pandas
 numpy
-scikit-learn
-xgboost
-randomforest
-tensorflow
 joblib
-keras
