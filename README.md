@@ -13,7 +13,10 @@ Proses preprocessing dan scaling data,
 Evaluasi model menggunakan metrik MAE, RMSE, MAPE, dan R² Score, serta
 Implementasi Artificial Neural Network (ANN) menggunakan TensorFlow/Keras
 
-## 🚀 Cara Menjalankan di Lokal
+## 🚀 Live Demo
+link Streamlit: https://caloriesburned-galih.streamlit.app/
+
+### 🚀 Cara Menjalankan di Lokal
 Download repository ini lalu masuk ke terminal:
 ```bash
 cd calories_app
