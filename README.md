@@ -14,7 +14,7 @@ Evaluasi model menggunakan metrik MAE, RMSE, MAPE, dan R² Score, serta
 Implementasi Artificial Neural Network (ANN) menggunakan TensorFlow/Keras
 
 ## 🚀 Cara Menjalankan di Lokal
-Download repository ini:
+Download repository ini lalu masuk ke terminal:
 ```bash
 cd calories_app
 pip install -r requirements.txt
