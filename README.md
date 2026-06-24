@@ -8,9 +8,9 @@ Project ini mencakup :
 5. Deployment Streamlit.
 
 Project ini ini melakukan:
-Perbandingan beberapa algoritma Machine Learning
-Proses preprocessing dan scaling data
-Evaluasi model menggunakan metrik MAE, RMSE, MAPE, dan R² Score
+Perbandingan beberapa algoritma Machine Learning,
+Proses preprocessing dan scaling data,
+Evaluasi model menggunakan metrik MAE, RMSE, MAPE, dan R² Score, serta
 Implementasi Artificial Neural Network (ANN) menggunakan TensorFlow/Keras
 
 ## 🚀 Cara Menjalankan di Lokal
