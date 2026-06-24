@@ -16,7 +16,7 @@ Implementasi Artificial Neural Network (ANN) menggunakan TensorFlow/Keras
 ## 🚀 Live Demo
 link Streamlit: https://caloriesburned-galih.streamlit.app/
 
-### 🚀 Cara Menjalankan di Lokal
+### Cara Menjalankan di Lokal
 Download repository ini lalu masuk ke terminal dan disarankan install library requirements.txt
 ```bash
 pip install -r requirements.txt
