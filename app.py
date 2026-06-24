@@ -5,7 +5,7 @@ import joblib
 from tensorflow.keras.models import load_model
 
 
-# KONFIGURASI HALAMAN
+# MainPage
 # =========================================================
 st.set_page_config(
     page_title="Calories Burned",
@@ -35,7 +35,8 @@ except Exception as e:
     st.exception(e)
     st.stop()
 
-# FUNGSI BANTU
+
+# BMI
 # =========================================================
 def hitung_bmi(berat_kg: float, tinggi_cm: float) -> float:
     tinggi_m = tinggi_cm / 100
@@ -118,11 +119,8 @@ st.divider()
 # PREDIKSI
 # =========================================================
 if st.button("🔍 Hitung ", use_container_width=True):
-
-    # --- Encoding Gender (sesuai notebook: male=1, female=0) ---
     gender_val = 1 if gender == "Male" else 0
-
-    # --- Pilih model & scaler sesuai dropdown ---
+    
     if model_choice == "Random Forest Regressor (ML)":
         active_scaler = rf_scaler
         X_scaled = preprocess_input(gender_val, age, duration, heart_rate, active_scaler)
@@ -133,7 +131,6 @@ if st.button("🔍 Hitung ", use_container_width=True):
         prediksi = ann_model.predict(X_scaled, verbose=0)
         kalori = float(prediksi[0][0])
 
-    # --- Hitung BMI (terpisah dari model) ---
     bmi = hitung_bmi(berat, tinggi)
     label_bmi, warna_bmi = kategori_bmi(bmi)
 
@@ -149,7 +146,7 @@ if st.button("🔍 Hitung ", use_container_width=True):
         st.metric(label="Estimasi Kalori Terbakar", value=f"{kalori:,.1f} kcal")
 
     with res_col2:
-        st.metric(label="BMI Lo", value=f"{bmi:.1f}")
+        st.metric(label="BMI", value=f"{bmi:.1f}")
         st.markdown(f"Kategori: **:{warna_bmi}[{label_bmi}]**")
 
     st.caption(
